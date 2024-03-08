@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  /* font-family: "Montserrat", sans-serif; */
+
+  scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --offwhite: #d3cdc6;
+  --black: #000000;
+  --white: #ffffff;
+  --blue: rgb(9, 79, 111);
+}
+
+body {
+
+  overflow-x: hidden;
+
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 20px;
+
+}
+
+
+.nav-bar {
+  font-family: 'Tw Cen MT Std', sans-serif;
+
+  width: 100%;
+  /* background-color: var(--back-color); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.heading {
+  float: left;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-right: 20px;
+
+
+}
+
+.links {
+  float: right;
+  padding-right: 20px;
+}
+
+.links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: var(--black);
+}
+
+.links li {
+  float: left;
+}
+
+.active {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+
+
+}
+
+
+.links li a {
+  display: block;
+  padding: 10px 16px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#active:hover {
+  color: var(--offwhite);
+}
+
+
+.links li a:hover {
+  color: var(--offwhite);
+}
+
+a:link {
+  color: var(--white);
+}
+
+
+
+/* visited link */
+a:visited {
+  color: var(--white);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--offwhite);
+}
+
+/* selected link */
+a:active {
+  color: var(--offwhite);
+}
+
+.inquire-form-main {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.829)),
+  url(images/background-6.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+}
+
+.reservations-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.829)),
+  url(images/restaurant.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+}
+
+.reservationform-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.831), rgba(0, 0, 0, 0.836)),
+  url(images/background-6.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+}
+
+
+.form-login {
+
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  /* Adjust the height as needed */
+  padding-bottom: 30px;
+
+
+}
+.form {
+
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  /* Adjust the height as needed */
+  padding-bottom: 30px;
+
+
+}
+.headings {
+  padding-top: 10px;
+}
+
+.inquire-form {
+
+  color: var(--white);
+  font-size: 20px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  margin-left: 150px;
+  margin-right: 100px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.form-details {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.detailed-description {
+
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  width: 250px;
+  padding-bottom: 30px;
+  border-bottom: 0.75px solid var(--white);
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  max-width: 250px;
+  padding-bottom: 5px;
+
+}
+
+.restaurant-name {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.bi {
+  font-size: 1.1rem;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+.labels {
+  font-size: 15px;
+}
+
+.merged {
+  padding-top: 10px;
+
+}
+
+.merged-input {
+  margin-top: 5px;
+  width: 520px;
+  height: 40px;
+  padding: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+
+}
+
+
+.divided {
+  display: flex;
+  justify-content: first baseline;
+}
+
+.divided-input {
+  margin-top: 5px;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+
+}
+
+.divided-input-res {
+  margin-top: 5px;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+
+}
+
+.col2 {
+  padding-left: 20px;
+}
+
+.dropdown {
+  width: 250px;
+  height: 40px;
+  margin-top: 5px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+
+}
+
+.average-dropdown {
+  width: 360px;
+  height: 40px;
+  margin-top: 5px;
+  font-family: 'Tw Cen MT Std', sanss-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+
+}
+
+.merged-dropdown {
+  width: 520px;
+  height: 40px;
+  margin-top: 5px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.additional {
+  margin-top: 5px;
+  width: 520px;
+  height: 160px;
+  padding: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.submit {
+
+  font-size: 22px;
+  margin-top: 30px;
+  background-color: var(--blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 520px;
+
+}
+
+.submit:hover {
+  background-color: #333333;
+}
+
+
+
+.title {
+  font-family: 'Julius Sans One', sans-serif;
+  padding-bottom: 25px;
+  font-size: 35px;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.reservation-title {
+  font-family: 'Julius Sans One', sans-serif;
+  padding-bottom: 20px;
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.login-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.829)),
+  url(images/restaurant.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 100vh;
+}
+
+.signup-main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.829)),
+  url(images/restaurant.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+
+}
+
+
+.average {
+  display: flex;
+  justify-content: first baseline;
+}
+
+.average-input {
+  margin-top: 5px;
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+
+
+}
+
+.errors-box {
+  margin-top: 10px;
+  height: 20px;
+margin-bottom: 5px;
+}
+
+.errors {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#correct{
+
+  color: rgb(8, 211, 46);
+  font-size: 20px;
+
+}
+
+#error{
+
+  color: rgb(229, 11, 11);
+  font-size: 20px;
+
+}
+
+.inputs-login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.login {
+
+  font-size: 22px;
+  margin-top: 20px;
+  background-color: var(--blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 320px;
+
+}
+
+.login:hover {
+  background-color: #333333;
+}
+
+.signup-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.signup {
+
+  font-size: 22px;
+  margin-top: 20px;
+  background-color: var(--blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  padding: 10px 40px;
+  cursor: pointer;
+  width: 320px;
+
+}
+
+.signup:hover {
+  background-color: #333333;
+}
+
+
+.divided-input-signup {
+  margin-top: 5px;
+  width: 170px;
+  height: 40px;
+  padding: 10px;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.login-form-title {
+  font-family: 'Julius Sans One', sans-serif;
+  padding-bottom: 15px;
+  font-size: 28px;
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+
+
+.login-signup-box {
+padding-right: 30px;
+width: 100%;
+  display: flex;
+justify-content: end;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  color: var(--white);
+font-size: 17px;
+}
+
+.paragraph-top a {
+  cursor: pointer;
+  color: rgb(13, 98, 137);
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.paragraph-top a:hover {
+
+  color: gray;
+
+}
